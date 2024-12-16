@@ -100,6 +100,59 @@ devnet=# select * from cats where id > 1;
 (1 row)
 ```
 
+## Git
+
+git add . Adds all files in the to the staging area for Git, if we put the file name this process will be done one element at the time.
+The files are upload from our working directory to the staging area.
+```bash
+git add <file-name>
+
+```
+
+The command git commit save the changes made to the files from the stating area to the local repository.
+```bash
+git commit
+git commit -m <message>
+
+```
+
+Check which branch you're currently on
+
+```bash
+git branch 
+
+```
+
+Create a new branch named "feature-login"
+```bash
+git branch feature-login
+
+```
+
+Switch to the new branch
+```bash
+git checkout feature-login
+
+```
+
+Alternatively, create and switch to the new branch in one step
+```bash
+git switch -c feature-login
+
+```
+
+git push upload the changes done from the local repository to the remote repository.
+```bash
+git push
+
+```
+
+
+git fetch as a standalone command downloads commits from remote repos into local repos. It gives you the chance to see and modify code from other devs.
+```bash
+git fetch
+
+```
 =======
 # Backend
 >>>>>>> 1682be935b438c1fe354573e0bba1d60433f3d23
